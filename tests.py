@@ -1,10 +1,5 @@
 import pytest
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
-import torch
 from main import predict_emotions
-
-tokenizer = AutoTokenizer.from_pretrained("SamLowe/roberta-base-go_emotions")
-model = AutoModelForSequenceClassification.from_pretrained("SamLowe/roberta-base-go_emotions")
 
 
 def test_predict_emotions_format():

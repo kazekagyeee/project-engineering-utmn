@@ -1,13 +1,14 @@
 import pytest
 from main import predict_emotions
 
+EXPECTED_EMOTION_COUNT = 28
 
 def test_predict_emotions_format():
     text = "I am very happy today!"
     result = predict_emotions(text)
 
     assert isinstance(result, dict), "Результат должен быть словарем"
-    assert len(result) == 28, "Должно быть 28 эмоций"
+    assert len(result) == EXPECTED_EMOTION_COUNT, f"Ожидается {EXPECTED_EMOTION_COUNT} эмоций, но получено {len(result)}."
 
     for emotion, score in result.items():
         assert isinstance(score, float), f"Значение эмоции {emotion} должно быть числом"

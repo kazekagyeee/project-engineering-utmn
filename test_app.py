@@ -1,5 +1,5 @@
 import pytest
-from main import predict_emotions
+from app.predictions import predict_emotions
 
 EXPECTED_EMOTION_COUNT = 28
 

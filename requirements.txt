@@ -2,3 +2,6 @@ streamlit
 transformers
 torch
 pytest
+fastapi
+pydantic
+uvicorn

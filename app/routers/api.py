@@ -1,5 +1,5 @@
 from app.model.input import TextInput
-from app.predictions import predict_emotions, sorted_results
+from app.predictions import predict_emotions
 from fastapi import FastAPI
 
 app = FastAPI()
